@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panduan Belajar PSAS Bahasa Indonesia Kelas XII</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Google+Sans+Code:wght@400;500&family=Playfair+Display:wght@600;700&family=Source+Serif+4:ital,opsz,wght@1,8..60,400;1,8..60,500&display=swap" rel="stylesheet">
+  <style>
+    /* Balanced · Language & Writing Study Guide · Centered headline + 50/50 split bar hero · Sub-topic distribution SVG -> Klinik EYD Surat Lamaran (Table 1) -> Full-bleed dark forest Sistematika 9-langkah band -> Teks Laporan PKL & Data diagram SVG -> Daftar Pustaka & Kaidah Laporan (Table 2) -> Master 30-item review (Table 3) -> Pull quote · Playfair Display + Source Serif 4 italic + DM Sans + Google Sans Code · Cool Sage Mist (#EEF3F1) + Deep Forest Emerald (#047857 / #064E3B) + Terracotta (#C2410C / #9A3412) · 0px image radius · Emphasis numeral 50:50 · Horizontal sub-topic SVG + 3-box data method SVG */
+
+    :root {
+      --paper: #EEF3F1;
+      --ink: #0F1C18;
+      --ink2: #24352F;
+      --mute: #394D46;
+      --hair: #C4D4CE;
+      --accent: #047857;
+      --accent-text: #064E3B;
+      --accent-2: #C2410C;
+      --accent-2-text: #9A3412;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 16px;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body {
+      margin: 0;
+      padding: 68px clamp(24px, 10.4vw, 112px) 92px;
+      background: var(--paper);
+      color: var(--ink);
+      overflow-x: hidden;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      column-gap: 24px;
+      row-gap: 24px;
+    }
+
+    .sec {
+      margin-top: 96px;
+    }
+
+    .measure {
+      max-width: 68ch;
+    }
+
+    header.hero-center {
+      text-align: center;
+      max-width: 820px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-weight: 700;
+      font-size: clamp(44px, 6vw, 80px);
+      line-height: 1.06;
+      letter-spacing: -0.02em;
+      margin: 0 0 20px;
+      color: var(--ink);
+      text-wrap: balance;
+    }
+
+    h2 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-weight: 600;
+      font-size: clamp(32px, 3.6vw, 46px);
+      line-height: 1.14;
+      letter-spacing: -0.015em;
+      margin: 0 0 18px;
+      color: var(--ink);
+      text-wrap: balance;
+    }
+
+    h3 {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 1.35;
+      margin: 0 0 8px;
+      color: var(--ink);
+    }
+
+    p {
+      margin: 0 0 16px;
+      font-size: 16.5px;
+      color: var(--ink2);
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    .deck {
+      font-size: clamp(18px, 1.8vw, 20px);
+      line-height: 1.55;
+      color: var(--ink2);
+      max-width: 58ch;
+      margin: 0 auto 32px;
+    }
+
+    .split-ratio {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      border-top: 2px solid var(--ink);
+      border-bottom: 1px solid var(--hair);
+      padding: 24px 0;
+      text-align: left;
+    }
+
+    .ratio-num {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-weight: 700;
+      font-size: clamp(44px, 5vw, 64px);
+      line-height: 1;
+      color: var(--accent-text);
+      margin-bottom: 6px;
+    }
+
+    .ratio-num.terra {
+      color: var(--accent-2-text);
+    }
+
+    .full-col {
+      grid-column: 1 / 13;
+    }
+
+    .split-left {
+      grid-column: 1 / 5;
+    }
+
+    .split-right {
+      grid-column: 5 / 13;
+    }
+
+    .col-4 {
+      grid-column: span 4;
+      border-top: 1px solid var(--hair);
+      padding-top: 18px;
+    }
+
+    .col-6 {
+      grid-column: span 6;
+      border-top: 1px solid var(--hair);
+      padding-top: 18px;
+    }
+
+    .mono {
+      font-family: 'Google Sans Code', monospace;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--accent-text);
+      white-space: nowrap;
+    }
+
+    .mono-terra {
+      font-family: 'Google Sans Code', monospace;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--accent-2-text);
+      white-space: nowrap;
+    }
+
+    figure {
+      margin: 0;
+      padding: 0;
+    }
+
+    .fig-title {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 1.3;
+      color: var(--ink);
+      margin: 0 0 16px;
+    }
+
+    figcaption {
+      margin-top: 12px;
+      font-size: 13px;
+      line-height: 1.45;
+      color: var(--mute);
+    }
+
+    .table-wrap {
+      width: 100%;
+      overflow-x: auto;
+      border-top: 2px solid var(--ink);
+      margin-top: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+    }
+
+    th {
+      font-family: 'Google Sans Code', monospace;
+      font-size: 12.5px;
+      font-weight: 500;
+      color: var(--mute);
+      padding: 14px 16px 12px 0;
+      border-bottom: 1px solid var(--ink);
+      vertical-align: bottom;
+    }
+
+    td {
+      padding: 15px 16px 15px 0;
+      border-bottom: 1px solid var(--hair);
+      font-size: 15px;
+      line-height: 1.5;
+      color: var(--ink2);
+      vertical-align: top;
+    }
+
+    td.num, th.num {
+      white-space: nowrap;
+      font-family: 'Google Sans Code', monospace;
+      font-size: 13px;
+    }
+
+    .bad {
+      color: var(--accent-2-text);
+      text-decoration: line-through;
+      text-decoration-thickness: 1.5px;
+    }
+
+    .good {
+      color: var(--accent-text);
+      font-weight: 700;
+    }
+
+    ul.clean {
+      list-style: none;
+      margin: 10px 0 0;
+      padding: 0;
+    }
+
+    ul.clean li {
+      position: relative;
+      padding-left: 18px;
+      margin-bottom: 10px;
+      font-size: 15.5px;
+      color: var(--ink2);
+    }
+
+    ul.clean li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 10px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    ol.steps {
+      list-style: none;
+      counter-reset: step;
+      margin: 16px 0 0;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px 24px;
+    }
+
+    ol.steps li {
+      counter-increment: step;
+      position: relative;
+      padding-left: 34px;
+      font-size: 15px;
+      line-height: 1.45;
+      color: #ECFDF5;
+    }
+
+    ol.steps li::before {
+      content: counter(step);
+      position: absolute;
+      left: 0;
+      top: 1px;
+      font-family: 'Google Sans Code', monospace;
+      font-size: 13px;
+      font-weight: 500;
+      color: #6EE7B7;
+      border-bottom: 1px solid #34D399;
+      padding-bottom: 1px;
+    }
+
+    .band-forest {
+      margin-top: 96px;
+      margin-left: calc(-1 * clamp(24px, 10.4vw, 112px));
+      margin-right: calc(-1 * clamp(24px, 10.4vw, 112px));
+      padding: 76px clamp(24px, 10.4vw, 112px);
+      background: #0B2820;
+      color: #F0FDF4;
+    }
+
+    .band-forest h2,
+    .band-forest h3 {
+      color: #F0FDF4;
+    }
+
+    .band-forest p {
+      color: #D1FAE5;
+    }
+
+    .band-forest .mono {
+      color: #6EE7B7;
+    }
+
+    .band-forest .col-6 {
+      border-top-color: #1F4E40;
+    }
+
+    .pull-quote {
+      margin-top: 96px;
+      padding-top: 40px;
+      border-top: 2px solid var(--ink);
+      font-family: 'Source Serif 4', Georgia, serif;
+      font-style: italic;
+      font-weight: 400;
+      font-size: clamp(28px, 3.4vw, 42px);
+      line-height: 1.26;
+      color: var(--ink);
+      max-width: 36ch;
+      text-wrap: balance;
+    }
+
+    .quote-note {
+      margin-top: 16px;
+      font-size: 14px;
+      color: var(--mute);
+    }
+
+    @media (max-width: 900px) {
+      .split-ratio,
+      ol.steps {
+        grid-template-columns: 1fr;
+      }
+      .split-left,
+      .split-right,
+      .col-4,
+      .col-6 {
+        grid-column: 1 / 13;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="hero-center">
+    <h1>Panduan Belajar PSAS Bahasa Indonesia Kelas XII</h1>
+    <p class="deck">Rangkuman lengkap 30 indikator soal SMK Negeri 2 Pekalongan (TA 2026/2027) yang terbagi tepat dua bagian: <strong>Surat Lamaran Pekerjaan</strong> dan <strong>Teks Laporan PKL &amp; Kegiatan</strong>.</p>
+
+    <div class="split-ratio">
+      <div>
+        <div class="ratio-num">15 soal</div>
+        <h3>Surat Lamaran Pekerjaan <span class="mono">No. 1–15</span></h3>
+        <p>Kaidah EYD/PUEBI (alamat, tanggal, hal, lampiran, salam, kalimat penutup), urutan sistematika 9 bagian, kata ganti <em>saya</em>, dan model gabungan.</p>
+      </div>
+      <div>
+        <div class="ratio-num terra">15 soal</div>
+        <h3>Teks Laporan PKL &amp; Kegiatan <span class="mono-terra">No. 16–30</span></h3>
+        <p>Penulisan daftar pustaka, struktur laporan (kata pengantar, waktu/tempat, lampiran), teknik &amp; sumber data, sifat objektif/faktual, dan cetak miring.</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- VISUAL 1: SUB-TOPIC BREAKDOWN SVG -->
+  <section class="sec grid">
+    <div class="full-col">
+      <figure>
+        <div class="fig-title">Kaidah EYD surat lamaran dan struktur laporan PKL menjadi penyumbang soal terbanyak</div>
+        <svg viewBox="0 0 720 330" width="100%" role="img" aria-label="Distribusi subtopik 30 soal PSAS Bahasa Indonesia Kelas XII">
+          <line x1="260" y1="16" x2="260" y2="275" stroke="#C4D4CE" stroke-width="1"/>
+          <line x1="360" y1="16" x2="360" y2="275" stroke="#C4D4CE" stroke-width="1" stroke-dasharray="3 4"/>
+          <line x1="460" y1="16" x2="460" y2="275" stroke="#C4D4CE" stroke-width="1" stroke-dasharray="3 4"/>
+          <line x1="560" y1="16" x2="560" y2="275" stroke="#C4D4CE" stroke-width="1" stroke-dasharray="3 4"/>
+
+          <text x="260" y="298" text-anchor="middle" font-family="Google Sans Code, monospace" font-size="13" fill="#394D46">0</text>
+          <text x="360" y="298" text-anchor="middle" font-family="Google Sans Code, monospace" font-size="13" fill="#394D46">2</text>
+          <text x="460" y="298" text-anchor="middle" font-family="Google Sans Code, monospace" font-size="13" fill="#394D46">4</text>
+          <text x="560" y="298" text-anchor="middle" font-family="Google Sans Code, monospace" font-size="13" fill="#394D46">6</text>
+          <text x="435" y="320" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="13" fill="#394D46">Jumlah soal (total 30 soal)</text>
+
+          <!-- Row 1: Kaidah EYD & Kebahasaan Surat (7) -> 350px -->
+          <text x="246" y="42" text-anchor="end" font-family="DM Sans, sans-serif" font-size="14" font-weight="700" fill="#0F1C18">EYD &amp; Kebahasaan Surat</text>
+          <rect x="260" y="24" width="350" height="24" rx="2" fill="#047857"/>
+          <text x="620" y="41" font-family="Google Sans Code, monospace" font-size="13.5" font-weight="500" fill="#064E3B">7 soal</text>
+
+          <!-- Row 2: Struktur & Tujuan Laporan PKL (6) -> 300px -->
+          <text x="246" y="86" text-anchor="end" font-family="DM Sans, sans-serif" font-size="14" font-weight="700" fill="#0F1C18">Struktur &amp; Tujuan Laporan</text>
+          <rect x="260" y="68" width="300" height="24" rx="2" fill="#C2410C"/>
+          <text x="570" y="85" font-family="Google Sans Code, monospace" font-size="13.5" font-weight="500" fill="#9A3412">6 soal</text>
+
+          <!-- Row 3: Data & Sifat Laporan (5) -> 250px -->
+          <text x="246" y="130" text-anchor="end" font-family="DM Sans, sans-serif" font-size="14" fill="#24352F">Data &amp; Sifat Laporan</text>
+          <rect x="260" y="112" width="250" height="24" rx="2" fill="#C2410C"/>
+          <text x="520" y="129" font-family="Google Sans Code, monospace" font-size="13.5" fill="#9A3412">5 soal</text>
+
+          <!-- Row 4: Sistematika & Jenis Surat (4) -> 200px -->
+          <text x="246" y="174" text-anchor="end" font-family="DM Sans, sans-serif" font-size="14" fill="#24352F">Sistematika &amp; Jenis Surat</text>
+          <rect x="260" y="156" width="200" height="24" rx="2" fill="#047857"/>
+          <text x="470" y="173" font-family="Google Sans Code, monospace" font-size="13.5" fill="#064E3B">4 soal</text>
+
+          <!-- Row 5: Hakikat, Fungsi & Lampiran Surat (4) -> 200px -->
+          <text x="246" y="218" text-anchor="end" font-family="DM Sans, sans-serif" font-size="14" fill="#24352F">Hakikat, Fungsi &amp; Berkas</text>
+          <rect x="260" y="200" width="200" height="24" rx="2" fill="#047857"/>
+          <text x="470" y="217" font-family="Google Sans Code, monospace" font-size="13.5" fill="#064E3B">4 soal</text>
+
+          <!-- Row 6: Kaidah Bahasa & Daftar Pustaka (4) -> 200px -->
+          <text x="246" y="262" text-anchor="end" font-family="DM Sans, sans-serif" font-size="14" fill="#24352F">Bahasa &amp; Daftar Pustaka</text>
+          <rect x="260" y="244" width="200" height="24" rx="2" fill="#C2410C"/>
+          <text x="470" y="261" font-family="Google Sans Code, monospace" font-size="13.5" fill="#9A3412">4 soal</text>
+        </svg>
+        <figcaption>Hijau zamrud menandai kelompok Surat Lamaran Pekerjaan (15 soal, No. 1–15); terakota menandai kelompok Teks Laporan PKL &amp; Kegiatan (15 soal, No. 16–30). Sumber: Kisi-Kisi PSAS Bahasa Indonesia Kelas XII SMKN 2 Pekalongan TA 2026/2027 (Rita Sari Fetiningrum, S.Pd.).</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- SECTION 1: KLINIK EYD SURAT LAMARAN (TABLE 1) -->
+  <section class="sec grid">
+    <div class="full-col">
+      <h2>Klinik EYD Surat Lamaran: bedakan penulisan salah dan baku</h2>
+      <p class="measure">Tujuh soal di paruh pertama ujian langsung menguji ketelitian ejaan dan tanda baca surat resmi. Hafalkan perbandingan di bawah ini—hampir semua pengecoh soal berasal dari kesalahan yang sama.</p>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Bagian &amp; Nomor</th>
+              <th>Contoh Salah (Jebakan Soal)</th>
+              <th>Penulisan Baku (EYD / PUEBI)</th>
+              <th>Aturan Kunci</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="num"><strong>Tempat &amp; Tanggal</strong><br>No. 2, 5</td>
+              <td><span class="bad">Pekalongan, 23 Nov 2026.</span><br><span class="bad">Pekalongan - 23 November 2026</span></td>
+              <td><span class="good">Pekalongan, 23 November 2026</span></td>
+              <td>Pakai koma setelah kota, nama bulan lengkap (kapital), <strong>tanpa titik</strong> di akhir.</td>
+            </tr>
+            <tr>
+              <td class="num"><strong>Hal &amp; Lampiran</strong><br>No. 9</td>
+              <td><span class="bad">Lamp.: 4 lembar.</span><br><span class="bad">Perihal: Lamaran Kerja.</span></td>
+              <td><span class="good">Lampiran: Empat lembar</span><br><span class="good">Hal: Lamaran pekerjaan</span></td>
+              <td>Tidak disingkat, jumlah lampiran ditulis dengan <strong>huruf</strong>, tanpa titik di akhir.</td>
+            </tr>
+            <tr>
+              <td class="num"><strong>Alamat Tujuan</strong><br>No. 3</td>
+              <td><span class="bad">Kepada Yth. Bapak Kepala HRD</span><br><span class="bad">Jl. Pemuda No. 10.</span></td>
+              <td><span class="good">Yth. Kepala HRD PT Maju Jaya</span><br><span class="good">Jalan Pemuda 10</span><br><span class="good">Pekalongan</span></td>
+              <td>Tanpa kata <em>Kepada</em>, tanpa <em>Bapak/Ibu</em> di depan jabatan, kata <em>Jalan</em> tidak disingkat, tanpa titik akhir.</td>
+            </tr>
+            <tr>
+              <td class="num"><strong>Salam Pembuka &amp; Penutup</strong><br>No. 13</td>
+              <td><span class="bad">Dengan Hormat.</span> / <span class="bad">Hormat Saya,</span></td>
+              <td><span class="good">Dengan hormat,</span> &harr; <span class="good">Hormat saya,</span></td>
+              <td>Kata kedua diawali <strong>huruf kecil</strong> dan keduanya diakhiri tanda <strong>koma (,)</strong>.</td>
+            </tr>
+            <tr>
+              <td class="num"><strong>Kata Ganti Orang</strong><br>No. 8, 15</td>
+              <td><span class="bad">Aku / Kami / Penulis</span></td>
+              <td><span class="good">saya</span></td>
+              <td>Pelamar individu wajib memakai kata ganti orang pertama tunggal baku <strong>saya</strong>.</td>
+            </tr>
+            <tr>
+              <td class="num"><strong>Kalimat Penutup</strong><br>No. 4</td>
+              <td><span class="bad">Atas perhatiannya, saya ucapkan banyak-banyak terima kasih.</span></td>
+              <td><span class="good">Atas perhatian Bapak/Ibu, saya mengucapkan terima kasih.</span></td>
+              <td>Ganti <em>-nya</em> dengan <strong>Bapak/Ibu</strong>, hindari kata berlebihan (<em>banyak-banyak</em>), gunakan <em>mengucapkan</em>.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- FULL-BLEED DARK FOREST BAND: SISTEMATIKA & KONSEP SURAT -->
+  <section class="band-forest">
+    <div class="grid">
+      <div class="full-col">
+        <h2>Sembilan urutan sistematika dan konsep dasar surat lamaran</h2>
+        <p class="measure">Untuk <span class="mono">No. 7</span>, urutan bagian surat lamaran tidak boleh tertukar—terutama posisi <em>Lampiran &amp; Hal</em> sebelum <em>Alamat Surat</em>.</p>
+
+        <ol class="steps">
+          <li><strong>Tempat &amp; tanggal surat</strong> (pojok kanan atas)</li>
+          <li><strong>Lampiran dan Hal</strong> (kiri atas, tidak disingkat)</li>
+          <li><strong>Alamat tujuan surat</strong> (langsung <em>Yth.</em>)</li>
+          <li><strong>Salam pembuka</strong> (<em>Dengan hormat,</em>)</li>
+          <li><strong>Alinea pembuka</strong> (sumber info lowongan)</li>
+          <li><strong>Isi surat</strong> (identitas, maksud, lampiran)</li>
+          <li><strong>Alinea penutup</strong> (harapan &amp; terima kasih)</li>
+          <li><strong>Salam penutup</strong> (<em>Hormat saya,</em>)</li>
+          <li><strong>Tanda tangan &amp; nama terang</strong></li>
+        </ol>
+      </div>
+
+      <div class="col-6">
+        <h3>Hakikat, Fungsi, Prinsip, &amp; Model <span class="mono">No. 1, 6, 11, 14</span></h3>
+        <p><strong>Surat lamaran pekerjaan (No. 1)</strong> adalah surat resmi dari pribadi kepada instansi/perusahaan untuk melamar jabatan tertentu. <strong>Fungsi utamanya bagi pelamar (No. 6)</strong> adalah pengajuan permohonan tertulis sekaligus sarana memperkenalkan kualifikasi agar dipanggil wawancara.</p>
+        <p><strong>Prinsip kebahasaan (No. 11):</strong> baku, resmi, efektif, sopan, dan sesuai EYD. <strong>Model penyusunan (No. 14):</strong> jika surat lamaran digabung menjadi satu kesatuan dengan CV/riwayat hidup disebut <strong>Model Gabungan</strong> (lawannya <em>Model Terpisah</em>).</p>
+      </div>
+
+      <div class="col-6">
+        <h3>Kalimat Pembuka &amp; Berkas Lampiran <span class="mono">No. 10, 12</span></h3>
+        <p><strong>Pembuka berdasarkan pengumuman resmi (No. 10):</strong> sebutkan instansi, nomor/tanggal pengumuman, dan posisi yang dilamar—contoh: <em>“Berdasarkan pengumuman resmi PT Nusantara Nomor 12/HRD/2026 tanggal 10 November 2026 tentang penerimaan staf administrasi, dengan ini saya mengajukan lamaran pekerjaan...”</em></p>
+        <p><strong>Lampiran wajib vs tidak wajib (No. 12):</strong> yang umumnya wajib adalah CV, fotokopi ijazah/transkrip, KTP, dan pasfoto. Berkas seperti <strong>SKCK, surat keterangan sehat, atau kartu keluarga</strong> umumnya tidak wajib dilampirkan kecuali diminta secara khusus.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: TEKS LAPORAN PKL & DATA (SPLIT + SVG DIAGRAM) -->
+  <section class="sec grid">
+    <div class="split-left">
+      <h2>Membedah Teks Laporan PKL dan Kegiatan</h2>
+      <p>Separuh kedua ujian (<span class="mono-terra">No. 16–30</span>) membahas penyusunan laporan Praktik Kerja Lapangan (PKL) dan laporan kegiatan sekolah. Fokus pada tujuan laporan, pembeda jenis data, serta ketepatan struktur.</p>
+    </div>
+    <div class="split-right">
+      <ul class="clean">
+        <li><strong>Tujuan laporan PKL (No. 18):</strong> bentuk pertanggungjawaban tertulis atas pelaksanaan magang di dunia usaha/dunia industri (DUDI) serta bukti pencapaian kompetensi murid SMK.</li>
+        <li><strong>Bagian-bagian struktur (No. 17, 19, 27, 28):</strong> <strong>Kata Pengantar</strong> (No. 27) berisi ucapan syukur &amp; terima kasih di bagian awal; <strong>Waktu dan Tempat Pelaksanaan</strong> (No. 28) memuat jadwal &amp; lokasi kegiatan seperti bazar amal; <strong>Saran</strong> di bab penutup (No. 17) harus konstruktif, logis, relevan dengan simpulan, dan dapat dilaksanakan; <strong>Lampiran</strong> (No. 19) di bagian akhir memuat foto dokumentasi, jurnal, dan lembar penilaian.</li>
+        <li><strong>Mengurutkan paragraf isi (No. 29):</strong> pada 4 kalimat acak tentang seminar literasi, cari penanda kronologis (<em>diawali/pembukaan &rarr; pemaparan materi &rarr; diskusi/tanya jawab &rarr; penutupan</em>) dan kesinambungan kata kunci antar kalimat.</li>
+      </ul>
+    </div>
+
+    <div class="full-col" style="margin-top: 24px;">
+      <figure>
+        <div class="fig-title">Data primer diperoleh langsung lewat observasi dan wawancara, sedangkan data sekunder berasal dari sumber perantara</div>
+        <svg viewBox="0 0 720 190" width="100%" role="img" aria-label="Diagram teknik pengumpulan data dan sumber data laporan">
+          <!-- Box 1: Wawancara -->
+          <rect x="20" y="24" width="210" height="118" rx="4" fill="#FFFFFF" stroke="#047857" stroke-width="2"/>
+          <text x="36" y="54" font-family="Google Sans Code, monospace" font-size="12.5" font-weight="500" fill="#064E3B">NO. 23 · DATA PRIMER</text>
+          <text x="36" y="80" font-family="DM Sans, sans-serif" font-size="16" font-weight="700" fill="#0F1C18">Wawancara</text>
+          <text x="36" y="104" font-family="DM Sans, sans-serif" font-size="13.5" fill="#24352F">Bertanya langsung kepada</text>
+          <text x="36" y="123" font-family="DM Sans, sans-serif" font-size="13.5" fill="#24352F">narasumber atau pembimbing.</text>
+
+          <!-- Box 2: Observasi -->
+          <rect x="255" y="24" width="210" height="118" rx="4" fill="#FFFFFF" stroke="#047857" stroke-width="2"/>
+          <text x="271" y="54" font-family="Google Sans Code, monospace" font-size="12.5" font-weight="500" fill="#064E3B">NO. 24 · DATA PRIMER</text>
+          <text x="271" y="80" font-family="DM Sans, sans-serif" font-size="16" font-weight="700" fill="#0F1C18">Observasi</text>
+          <text x="271" y="104" font-family="DM Sans, sans-serif" font-size="13.5" fill="#24352F">Pengamatan langsung proses</text>
+          <text x="271" y="123" font-family="DM Sans, sans-serif" font-size="13.5" fill="#24352F">kerja nyata di lapangan.</text>
+
+          <!-- Box 3: Data Sekunder -->
+          <rect x="490" y="24" width="210" height="118" rx="4" fill="#FFFFFF" stroke="#C2410C" stroke-width="2"/>
+          <text x="506" y="54" font-family="Google Sans Code, monospace" font-size="12.5" font-weight="500" fill="#9A3412">NO. 25 · PERANTARA</text>
+          <text x="506" y="80" font-family="DM Sans, sans-serif" font-size="16" font-weight="700" fill="#0F1C18">Sumber Sekunder</text>
+          <text x="506" y="104" font-family="DM Sans, sans-serif" font-size="13.5" fill="#24352F">Data tidak langsung: buku,</text>
+          <text x="506" y="123" font-family="DM Sans, sans-serif" font-size="13.5" fill="#24352F">arsip kantor, profil instansi.</text>
+
+          <!-- Bottom note -->
+          <text x="360" y="172" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="13.5" fill="#394D46">Sifat hasil laporan: Objektif (No. 20: sesuai fakta tanpa rekayasa) &amp; Faktual (No. 26: berdasarkan kenyataan yang dapat dibuktikan).</text>
+        </svg>
+        <figcaption>Ringkasan metode pengumpulan data dan jenis sumber data pada indikator soal No. 20 dan No. 23–26.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- SECTION 3: DAFTAR PUSTAKA & KAIDAH BAHASA LAPORAN (TABLE 2) -->
+  <section class="sec grid">
+    <div class="full-col">
+      <h2>Rumus Daftar Pustaka (NaTaJuKoPen) dan kaidah bahasa laporan</h2>
+      <p class="measure">Selain isi dan data, laporan resmi dinilai dari tata tulis referensi, format istilah asing, serta ragam bahasa yang konsisten.</p>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Kaidah &amp; Nomor</th>
+              <th>Aturan Baku Wajib Diingat</th>
+              <th>Contoh Penerapan Tepat</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="num"><strong>Daftar Pustaka Buku</strong><br>No. 16</td>
+              <td>Urutan <strong>NaTaJuKoPen</strong>: <em>Nama Belakang, Nama Depan. Tahun. Judul Buku (miring). Kota Terbit: Penerbit.</em> Gelar akademik tidak ditulis.</td>
+              <td><span class="good">Keraf, Gorys. 2004. <em>Komposisi</em>. Ende: Nusa Indah.</span><br>Perhatikan tanda titik (.) antar unsur dan titik dua (:) antara kota &amp; penerbit.</td>
+            </tr>
+            <tr>
+              <td class="num"><strong>Istilah Asing</strong><br>No. 21</td>
+              <td>Kata/istilah asing yang belum diserap resmi ke dalam bahasa Indonesia wajib ditulis dengan <strong>cetak miring (italic)</strong>.</td>
+              <td>Kegiatan diawali dengan <em>briefing</em> pagi sebelum memeriksa <em>troubleshooting</em> jaringan.</td>
+            </tr>
+            <tr>
+              <td class="num"><strong>Kata Ganti Formal</strong><br>No. 22</td>
+              <td>Laporan formal menghindari kata ganti informal (<em>aku, kamu</em>). Gunakan sebutan objektif <strong>penulis / penyusun</strong> (atau <em>kami</em> untuk tim resmi).</td>
+              <td><em>Penulis</em> melaksanakan observasi di bagian administrasi selama tiga bulan.</td>
+            </tr>
+            <tr>
+              <td class="num"><strong>Ragam Bahasa Resmi</strong><br>No. 30</td>
+              <td>Laporan resmi wajib memakai <strong>bahasa Indonesia baku / ragam resmi (formal)</strong>, lugas, dan sesuai kaidah EYD/PUEBI.</td>
+              <td>Hindari kata percakapan (<em>nggak, banget, bikin</em>); ganti dengan <em>tidak, sangat, membuat</em>.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: PETA CEPAT 30 NOMOR (TABLE 3) -->
+  <section class="sec grid">
+    <div class="full-col">
+      <h2>Peta cepat 30 nomor untuk review malam sebelum ujian</h2>
+      <p class="measure">Gunakan daftar ringkas ini untuk mengecek ulang setiap nomor indikator kisi-kisi sebelum masuk ruang ujian.</p>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Kelompok Nomor</th>
+              <th>Materi Utama</th>
+              <th>Target Kunci yang Diujikan</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="num">No. 1, 6, 11, 14</td>
+              <td>Hakikat, Fungsi, Prinsip, &amp; Model Surat</td>
+              <td>Pengertian surat lamaran (1), fungsi bagi pelamar (6), prinsip bahasa baku/santun (11), model gabungan dengan CV (14).</td>
+            </tr>
+            <tr>
+              <td class="num">No. 2, 7, 10, 12</td>
+              <td>Sistematika, Pembuka, &amp; Lampiran Surat</td>
+              <td>Identifikasi tempat &amp; tanggal (2), urutan 9 bagian surat (7), kalimat pembuka dari pengumuman resmi (10), dokumen tidak wajib (12).</td>
+            </tr>
+            <tr>
+              <td class="num">No. 3, 4, 5, 8, 9, 13, 15</td>
+              <td>Kaidah EYD &amp; Kebahasaan Surat</td>
+              <td>Alamat tujuan (3), perbaikan kalimat penutup (4), tempat &amp; tanggal baku (5), kata ganti <em>saya</em> (8, 15), Hal &amp; Lampiran (9), salam pembuka-penutup (13).</td>
+            </tr>
+            <tr>
+              <td class="num">No. 16, 21, 22, 30</td>
+              <td>Daftar Pustaka &amp; Kebahasaan Laporan</td>
+              <td>Format Daftar Pustaka buku NaTaJuKoPen (16), cetak miring istilah asing (21), pronomina laporan formal (22), ragam bahasa baku/resmi (30).</td>
+            </tr>
+            <tr>
+              <td class="num">No. 17, 18, 19, 27, 28, 29</td>
+              <td>Struktur &amp; Koherensi Laporan PKL/Kegiatan</td>
+              <td>Syarat saran baik (17), tujuan laporan PKL (18), fungsi Lampiran (19) &amp; Kata Pengantar (27), letak waktu &amp; tempat bazar (28), mengurutkan 4 kalimat seminar literasi (29).</td>
+            </tr>
+            <tr>
+              <td class="num">No. 20, 23, 24, 25, 26</td>
+              <td>Data &amp; Karakteristik Laporan</td>
+              <td>Sifat objektif (20), teknik wawancara (23) &amp; observasi (24), sumber data sekunder (25), makna sifat faktual (26).</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- PULL QUOTE -->
+  <section class="pull-quote">
+    “Di Bahasa Indonesia, kunci nilai sempurna ada pada detail kecil: koma pada salam, tanpa titik di alamat dan tanggal, huruf pada jumlah lampiran, dan urutan NaTaJuKoPen di daftar pustaka.”
+  </section>
+  <p class="quote-note">Disusun berdasarkan Kisi-Kisi PSAS Gasal Bahasa Indonesia Kelas XII SMK Negeri 2 Pekalongan TA 2026/2027 (Rita Sari Fetiningrum, S.Pd.).</p>
+
+</body>
+</html>
